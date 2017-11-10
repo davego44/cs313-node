@@ -1,0 +1,21 @@
+<form action="/getRate" method="GET">
+	<div class="row">
+		<div class="col-md-6">
+			<label for="weight">Weight (oz)</label><br/>
+			<input type="text" name="weight">
+		</div>
+		<div class="col-md-6">
+			<label for="type">Mail Type</label><br/>
+			<input type="radio" name="type" value="lettersS"/>Letters (Stamped)<br/>
+			<input type="radio" name="type" value="lettersM"/>Letters (Metered)<br/>
+			<input type="radio" name="type" value="largeEnvF"/>Large Envelopes (Flat)<br/>
+			<input type="radio" name="type" value="parcels"/>Parcels<br/>
+		</div>
+		<div class="col-md-4">
+		</div>
+	</div>
+	
+	<p>Estimated Cost: <div id="resultDiv" style="display:inline-block;"></div></p><br/><br/>
+	
+	<input type="submit" value="Calculate Actual"/>
+</form>
